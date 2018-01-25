@@ -1,0 +1,24 @@
+<div class="category-selector">
+  <h3>Select categories</h3>
+
+  <div class="form-group filter-container">
+    <label for="filter"> Filter: </label>
+    <input id="filter" class='form-control' [ngModel]='filter' (ngModelChange)="filterTree($event)"/>
+  </div>
+
+
+  <div class='categories-container'>
+    <div class="expand-collapse-reset_selection">
+      <button (click)="onExpand()">Expand</button>
+      <button (click)="onCollapse()">Collapse</button>
+      <button class="right" (click)="onResetSelection()">Reset selection</button>
+    </div>
+
+    <tree-root [nodes]="nodes" [options]="options"></tree-root>
+  </div>
+
+  <div class="make-decision">
+    <button class="right" (click)="onOk()">Ok</button>
+    <button class="right" (click)="onCancel()">Cancel</button>
+  </div>
+</div>

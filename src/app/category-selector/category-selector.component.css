@@ -1,0 +1,26 @@
+.category-selector {
+  width: 50%;
+}
+
+.filter-container {
+  margin: 5px;
+}
+
+.expand-collapse-reset_selection {
+  margin: 5px;
+}
+
+#filter {
+  width: auto;
+}
+
+.make-decision {
+}
+
+.right {
+  float: right;
+}
+
+div {
+  border: 1px dotted black;
+}

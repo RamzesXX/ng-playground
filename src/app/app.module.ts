@@ -1,18 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+
 
 import { AppComponent } from './app.component';
+import { CategorySelectorComponent } from './category-selector/category-selector.component';
+import {FormsModule} from '@angular/forms';
+import {TreeModule} from 'angular-tree-component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CategorySelectorComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    TreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
